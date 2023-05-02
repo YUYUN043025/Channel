@@ -21,12 +21,19 @@ Finally, if you face the error:
 
 Mismatch between imgs 0 and poses 55 !!!!
 Traceback (most recent call last):
+
 File "run_nerf.py", line 878, in <module>
+  
 train()
+  
 File "run_nerf.py", line 544, in train
+  
 spherify=args.spherify)
+  
 File "C:\Users\HP\Desktop\nerf-pytorch-master\load_llff.py", line 246, in load_llff_data
+  
 poses, bds, imgs = _load_data(basedir, factor=factor) # factor=8 downsamples original imgs by 8x
+  
 TypeError: cannot unpack non-iterable NoneType object
 
 Probably because the functions are not compatible. The solution is to create a new folder images_8 in your data folder(Channel1) and put the eight times downsampled images here.
