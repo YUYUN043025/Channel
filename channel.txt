@@ -3,8 +3,8 @@
 # same for all other LLFF-style real scenes.
 
 expname = Channel1
-basedir = ./GP_logs
-datadir = ./GP_data/nerf_llff_data/Channel1
+basedir = ./logs
+datadir = ./data/nerf_llff_data/Channel1
 dataset_type = llff
 factor = 8
 llffhold = 8
